@@ -3,7 +3,8 @@ import * as Types from '../actions/actionTypes'
 const initialState = {
     para: 4,
     html: false,
-    text: ''
+    text: '',
+    loading: true
 }
 
 function textReducer(state = initialState, action) {
@@ -12,6 +13,12 @@ function textReducer(state = initialState, action) {
             return {
                 ...state,
                 text: action.payload
+            }
+        }
+        case Types.TEXT_LOADING: {
+            return {
+                ...state,
+                loading: action.payload
             }
         }
         default: return state
