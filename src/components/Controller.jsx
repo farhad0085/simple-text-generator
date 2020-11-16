@@ -16,7 +16,7 @@ const Controller = props => {
         <form className="form-inline">
 
             <div className="form-group">
-                <label>No. of Para (0-150)</label>
+                <label>No. of Paragraph (0-150)</label>
                 <input
                     className="form-control"
                     type="number"
