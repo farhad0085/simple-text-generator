@@ -2,7 +2,10 @@ label, input {
     margin-right: 20px;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .no-scroll-bar::-webkit-scrollbar {
     display: none;
-    /* width: 10px; */
 }
