@@ -21,6 +21,13 @@ function textReducer(state = initialState, action) {
                 loading: action.payload
             }
         }
+        case Types.TEXT_LOAD_ERROR: {
+            return {
+                ...state,
+                loading: false,
+                error: action.payload
+            }
+        }
         default: return state
     }
 }

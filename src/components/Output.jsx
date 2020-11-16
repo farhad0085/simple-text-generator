@@ -12,7 +12,7 @@ const Output = props => {
                     rows={props.text.length / 100}
                     className="no-scroll-bar form-control p-4"
                     readOnly
-                    value={props.text} />
+                    value={props.text || props.error} />
             )}
         </div>
     )

@@ -9,5 +9,11 @@ export const getSampleText = (para, html) => dispatch => {
                 dispatch({ type: Types.TEXT_LOADING, payload: false })
                 return dispatch({ type: Types.LOAD_TEXT, payload: res.data.text })
             })
+            .catch(err => {
+                dispatch({
+                    type: Types.TEXT_LOAD_ERROR,
+                    payload: err.response ? err.response.data.status : "Failed to load contents at this moment! Please try again later"
+                })
+            })
     }
 }
