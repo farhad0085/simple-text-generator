@@ -6,7 +6,7 @@ import './app.css'
 const App = props => {
     return (
         <div className="container">
-            <h1 className="display-4">ReactJS Sample text generator</h1>
+            <h1 className="display-4">ReactJS Dummy text generator</h1>
             <hr />
             <Controller />
             <Output value={props.text} />
