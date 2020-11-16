@@ -1,0 +1,1 @@
+export const LOAD_TEXT = 'LOAD_TEXT'
