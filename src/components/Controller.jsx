@@ -8,7 +8,7 @@ const Controller = props => {
     const [html, setHtml] = useState(false)
 
     useEffect(() => {
-        if (para > 150) setPara(150)
+        if (para > 150) setPara(150) // more than 150 will not works
         props.getSampleText(para, html)
     }, [para, html, props])
 
